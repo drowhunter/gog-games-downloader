@@ -1,0 +1,33 @@
+.dl-floppy {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.dl-button-ext {
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 25%);
+    font-weight: 700;
+    border: 1px solid #96bd27;
+    border-bottom-color: #69941b;
+    border-left-color: #7fa721;
+    border-right-color: #7fa721;
+    margin-bottom: 16px;
+    color: #fff;
+    background-image: linear-gradient(-180deg,#9fbf00,#80ab00 91%);
+    flex: 0;
+}
+
+.inner-dl-icon {
+    position: relative;
+    top: 0.4em;
+    margin-right: 0.5em;
+    cursor: pointer;
+}

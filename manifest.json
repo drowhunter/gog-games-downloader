@@ -1,0 +1,33 @@
+{
+  "name": "GOG Download",
+  "description": "Add GOG Games Download button",
+  "version": "1.0.6",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "name": "GOG Download",
+    "icons": [ "icon.png" ],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "matches": [ 
+      "https://*.gog.com/*"
+    ],
+    "js": [ "content-script.js" ],
+    "css": [ "gog-game-ext.css" ]
+    
+ }],
+  "web_accessible_resources": [
+    {
+      "resources": [ "assets/floppy.svg", "assets/icon.jpg" ],
+      "matches": [ "https://*.gog.com/*" ]
+    }
+  ]
+  
+  
+}
